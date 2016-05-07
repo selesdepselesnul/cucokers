@@ -26,6 +26,7 @@ else:
 	if select_mode(mode) != '':
 		for x in filter_text:
 			if select_mode(mode) in x:
+				out_file.write(x+';')
 				print(x+';')
 
 
