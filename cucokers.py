@@ -9,6 +9,8 @@ def select_mode(mode):
 	elif mode == '--c-view':
 		print('c-view mode')
 		return r"CREATE.+VIEW"
+	elif mode == '--i-table':
+		return r"INSERT INTO.+"
 	else:
 		return ""
 
