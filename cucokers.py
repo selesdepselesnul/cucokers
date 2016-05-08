@@ -58,8 +58,6 @@ def main():
 	else:
 		pattern_reg = select_mode(options)
 		if pattern_reg != '':
-			
-			print(pattern_reg)
 			pattern = re.compile(pattern_reg)
 			for x in filter_text:
 				if pattern.search(x):
