@@ -57,7 +57,7 @@ def main():
 		print('arg < 3')
 	else:
 		pattern_reg = select_mode(options)
-		if pattern_reg != '':
+		if pattern_reg:
 			pattern = re.compile(pattern_reg)
 			for x in filter_text:
 				if pattern.search(x):
