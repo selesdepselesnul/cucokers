@@ -16,11 +16,6 @@ def select_mode(options):
 
 
 def main():
-	params = {
-		'mode' : sys.argv[1],
-		'src' : sys.argv[2],
-		'dest' : sys.argv[3] 
-	}
 
 	parser = OptionParser()
 	parser.add_option("", "--src", dest="src",
@@ -51,10 +46,7 @@ def main():
 
 
 	(options, args) = parser.parse_args()
-	print(options)
-	print(args)
-
-	print(options.src)
+	
 	in_file = open(options.src, 'r')
 	text_to_split = in_file.read();
 	filter_text = text_to_split.split(';')
