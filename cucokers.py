@@ -1,5 +1,7 @@
 #!/usr/bin/python
 import re, sys
+from optparse import OptionParser
+
 
 def select_mode(mode):
 	if mode == '--c-database':
@@ -40,6 +42,8 @@ def main():
 					out_file.write(x+';')
 					print(x+';')	
 
+	print('\n\n\n\n\n\nfinished !')
+	print('cucokers v1 by Moch Deden')
 
 if __name__ == '__main__':
 	main()
